@@ -1,24 +1,11 @@
-# 🔥 Smart Heating Controller using Reinforcement Learning
+# Training a heating controller with reinforcement learning
 
-## 🚀 Overview
+## Motivation
+In many houses (or apartments), heating systems are temperature controlled (for example by room thermostats) but not time controlled. This is inefficient and inconvenient, because it does not allow to lower the room temperature for saving energy at night or when nobody is in a room for long time, and at the same time provide comfortable temperatures when people use a room.
 
-Traditional heating systems are typically controlled by simple thermostats, maintaining constant temperatures regardless of occupancy or time of day. This leads to **energy inefficiency** and **higher heating costs**.
+In this repository, we develop a heating controller with reinforcement learning, using [Ray / rllib](https://ray.readthedocs.io/en/latest/index.html) as reinforcement learning framework. We implement an OpenAI gym environment in which a controller can be trained virtually. Besides, we implement a simple simulator that allows to visualize the behaviour of the agent. Our goal is, later, to bring the trained controller to a mini computer and use it for controlling the heating system in an apartment.
 
-This project aims to develop a **smart heating controller** using **Reinforcement Learning (RL)** with [Ray RLlib](https://ray.readthedocs.io/en/latest/index.html). By training an RL agent in a virtual environment, we enable the system to **adaptively learn** when to heat or conserve energy based on real-time conditions. The ultimate goal is to deploy this agent onto a **mini-computer** (like a Raspberry Pi) for real-world smart heating control.
-
----
-
-## 🧰 Features
-
-- 🧠 **RL-Based Heating Agent** trained using Ray RLlib
-- 🌡️ **Custom OpenAI Gym Environment** simulating temperature dynamics
-- 🖥️ **Simulator Interface** to visualize and test agent behavior
-- 💾 **Checkpointing** and training configuration
-- 🔬 **Baseline Comparisons** for performance benchmarking
-
----
-
-## 📦 Usage Guide
+## Usage
  1. Check out this repository
  2. Set up `anaconda` environment by running 
 
@@ -42,3 +29,6 @@ This project aims to develop a **smart heating controller** using **Reinforcemen
 
 
 
+## License
+GPLv3, see [LICENSE](https://github.com/ae137/RLHeatingController/blob/master/LICENSE) for more 
+information
